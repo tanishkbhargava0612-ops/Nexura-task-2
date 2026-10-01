@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Club Registration</title>
+<link rel="stylesheet" href="club.css">
+</head>
+
+
+<body>
+    <header>
+
+        <h1>🎓 Campus Club Portal</h1>
+
+        <p>Discover. Connect. Create. Lead.</p>
+
+    </header>
+
+    <nav>
+
+        <a href="#details">Club Details</a>
+
+        <a href="#clubs">Clubs</a>
+
+        <a href="#register">Register</a>
+
+        <a href="#rules">Rules</a>
+
+    </nav>
+
+<div class="hi"></div>
+    <main>
+        <section id="details">
+
+            <h2>About Our Clubs</h2>
+
+            <p>
+                Our college clubs provide students with opportunities to explore
+                their interests, develop new skills, participate in events and
+                connect with other students.
+            </p>
+
+            <br>
+
+            <div class="club-details">
+
+                <article>
+
+                    <h3>💻 Technical Clubs</h3>
+
+                    <p>
+                        Learn programming, web development, AI, robotics
+                        and other emerging technologies.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>🎨 Creative Clubs</h3>
+
+                    <p>
+                        Explore photography, music, art, design,
+                        filmmaking and creative expression.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>📢 Management Clubs</h3>
+
+                    <p>
+                        Improve communication, leadership, marketing,
+                        entrepreneurship and management skills.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="clubs">
+
+            <h2>Available Clubs</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Club Name</th>
+                        <th>Category</th>
+                        <th>Meeting Day</th>
+                        <th>Faculty Coordinator</th>
+                        <th>Seats</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+                        <td>CodeCraft</td>
+                        <td>Technical</td>
+                        <td>Monday</td>
+                        <td>Dr. Sharma</td>
+                        <td>40</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pixel Studio</td>
+                        <td>Creative</td>
+                        <td>Tuesday</td>
+                        <td>Ms. Verma</td>
+                        <td>30</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rhythm Club</td>
+                        <td>Music</td>
+                        <td>Wednesday</td>
+                        <td>Mr. Mehta</td>
+                        <td>25</td>
+                    </tr>
+
+                    <tr>
+                        <td>Entrepreneurship Cell</td>
+                        <td>Management</td>
+                        <td>Thursday</td>
+                        <td>Dr. Kapoor</td>
+                        <td>35</td>
+                    </tr>
+
+                    <tr>
+                        <td>Literary Society</td>
+                        <td>Literary</td>
+                        <td>Friday</td>
+                        <td>Ms. Singh</td>
+                        <td>30</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <section id="register">
+
+            <h2>Club Registration Form</h2>
+
+            <form>
+
+
+                <div>
+
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label for="email">College Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@college.edu"
+                        required
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label for="roll">Roll Number</label>
+
+                    <input
+                        type="text"
+                        id="roll"
+                        name="roll"
+                        placeholder="Enter your roll number"
+                        required
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label for="year">Year of Study</label>
+
+                    <select id="year" name="year">
+
+                        <option value="">Select your year</option>
+                        <option>1st Year</option>
+                        <option>2nd Year</option>
+                        <option>3rd Year</option>
+                        <option>4th Year</option>
+
+                    </select>
+
+                </div>
+
+
+                <div>
+
+                    <label>Gender</label>
+
+                    <div class="radio-group">
+
+                        <label>
+                            <input type="radio" name="gender" value="male">
+                            Male
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="female">
+                            Female
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="other">
+                            Other
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <label for="club">Choose Your Club</label>
+
+                    <select id="club" name="club" required>
+
+                        <option value="">Select a club</option>
+                        <option>CodeCraft</option>
+                        <option>Pixel Studio</option>
+                        <option>Rhythm Club</option>
+                        <option>Entrepreneurship Cell</option>
+                        <option>Literary Society</option>
+
+                    </select>
+
+                </div>
+
+
+                <div>
+
+                    <label>Areas of Interest</label>
+
+                    <div class="checkbox-group">
+
+                        <label>
+                            <input type="checkbox" name="interest" value="events">
+                            Events
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="interest" value="design">
+                            Design
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="interest" value="marketing">
+                            Marketing
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="interest" value="technical">
+                            Technical
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <label for="experience">
+                        Previous Experience
+                    </label>
+
+                    <textarea
+                        id="experience"
+                        name="experience"
+                        placeholder="Tell us about any relevant experience..."
+                    ></textarea>
+
+                </div>
+
+
+                <div>
+
+                    <label for="reason">
+                        Why do you want to join this club?
+                    </label>
+
+                    <textarea
+                        id="reason"
+                        name="reason"
+                        placeholder="Tell us why you are interested..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div>
+
+                    <label>
+                        <input type="checkbox" required>
+                        I agree to follow the club rules.
+                    </label>
+
+                </div>
+
+
+                <button type="submit">
+                    Submit Registration
+                </button>
+
+
+            </form>
+
+        </section>
+
+        <section id="rules">
+
+            <h2>📜 Club Rules</h2>
+
+            <ol class="rules">
+
+                <li>
+                    Members must maintain respectful behaviour towards
+                    other members and coordinators.
+                </li>
+
+                <li>
+                    Students should attend club meetings and activities
+                    regularly.
+                </li>
+
+                <li>
+                    College resources must be used responsibly.
+                </li>
+
+                <li>
+                    Members must follow the deadlines given for club events
+                    and activities.
+                </li>
+
+                <li>
+                    Any form of harassment, discrimination or misconduct
+                    is not permitted.
+                </li>
+
+                <li>
+                    Members should represent the college responsibly
+                    during external events.
+                </li>
+
+                <li>
+                    Students may participate in multiple clubs as long as
+                    their academic responsibilities are not affected.
+                </li>
+
+            </ol>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+
+        <p>
+            © 2026 Campus Club Portal |
+            <span>Explore • Participate • Grow</span>
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
